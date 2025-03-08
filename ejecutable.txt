@@ -1,0 +1,5 @@
+terraform init #inicializar
+
+terraform apply #aplicar los cambios
+
+terraform destroy #eliminar para evitar costos
