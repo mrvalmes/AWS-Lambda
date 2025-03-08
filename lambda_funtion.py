@@ -14,10 +14,10 @@ def lambda_handler(event, context):
 
 def send_email(message):
     # Configuración del servidor SMTP
-    smtp_server = "smtp.gmail.com"  # Cambia según tu proveedor de correo
+    smtp_server = "smtp.gmail.com"  # proveedor de correo
     smtp_port = 595
-    sender_email = "htech220@gmail.com"  # Cambia por tu correo
-    sender_password = ""  # Cambia por tu contraseña
+    sender_email = "htech220@gmail.com"  # correo
+    sender_password = ""  
 
     # Crear el mensaje
     msg = MIMEMultipart()
