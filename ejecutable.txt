@@ -1,5 +1,13 @@
 terraform init #inicializar
 
-terraform apply #aplicar los cambios
+terraform apply -auto-approve #aplicar los cambios
 
 terraform destroy #eliminar para evitar costos
+
+python test_email.py #Probar local
+
+#Enviar mensaje a cola.
+aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/626635429660/email-queue --message-body '{
+  "to": "htech220@gmail.com",
+  "origen": "AWS Lambda"
+}'
